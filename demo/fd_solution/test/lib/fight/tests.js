@@ -7,7 +7,11 @@
 seajs.use(['../../../js/lib/fight'], function(fight) {
 
     test('fight', function() {
-        var result = fight('张三', '李四');
-
+        var attack = '张三';
+        var defence = '王大宝';
+        var result = fight(attack, defence);
+        ok(result.attack.name, attack);
+        ok(result.defence.name, defence);
+        ok(result.attack.blood > 0 ? result.result : !result.result);
     });
 });

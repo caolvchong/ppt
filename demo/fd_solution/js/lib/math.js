@@ -6,7 +6,7 @@
 define(function(require, exports, module) {
     module.exports = {
         /**
-         * 产生min-max之间的随机整数
+         * 产生[min, max]的随机整数
          * @param max
          * @param min
          * @returns {number}

@@ -5,7 +5,7 @@ define(function(require, exports, module) {
     var map = [];
     var plugins = ['shim'];
 
-    var local = 'localhost/demo/';
+    var local = 'local.com/demo/fd_solution/';
     var remote = 'remote.com/';
 
     if (search.indexOf('online') > -1) {

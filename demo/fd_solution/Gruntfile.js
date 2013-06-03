@@ -41,7 +41,16 @@ module.exports = function(grunt) {
                 es5: true, // 允许使用ES5特性
                 evil: false // 不允许使用eval和new Function
             },
-            useDefault: ['Gruntfile.js', 'js/**/*.js'],
+            useDefault: ['Gruntfile.js', 'js/**/*.js', '!js/**/tpl/*.js'],
+            tpl: {
+                options: {
+                    evil: true,
+                    quotmark: false
+                },
+                files: {
+                    src: ['js/**/tpl/*.js']
+                }
+            },
             testUnit: {
                 options: {
                     undef: false // 允许使用未声明的变量
